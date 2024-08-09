@@ -95,71 +95,88 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 /*--projects--*/
-/*--contact--*/
-form{
-	display: block;
-	width: 300px;
-	padding: 1em;
-	margin: 0 auto;
-	color: #222;
-	font-size: 1.1em;
+/*--contact--*/form {
+    display: block;
+    max-width: 300px; 
+    width: 100%; 
+    padding: 1em;
+    margin: 0 auto;
+    color: #222;
+    font-size: 1.1em;
+    box-sizing: border-box; 
 }
-input, label, fieldset{
-	display: block;
-	width: 95%;
+
+
+input, label, fieldset {
+    display: block;
+    width: 100%; 
 }
-.required{
-  display: inline-block;
-  color: #DE0B63;
-  font-size: 1.1em;
-  font-weight: bold;
+
+
+.required {
+    display: inline-block;
+    color: #DE0B63;
+    font-size: 1.1em;
+    font-weight: bold;
 }
-label{
-	padding-left: 0.5em;
-	margin: 0.75em 0 0.25em 0;
+
+
+label {
+    padding-left: 0.5em;
+    margin: 0.75em 0 0.25em 0;
 }
-input{
-	font-size: 1em;
-	padding: 0.25em 0.5em;
-  border: 10px solid black;
-  border-radius: 30px;
-	height: 1.5em;
+
+
+input {
+    font-size: 1em;
+    padding: 0.25em 0.5em;
+    border: 5px solid black; 
+    border-radius: 15px; 
+    height: auto; 
+    box-sizing: border-box; 
 }
-fieldset{
-  border: 10px solid black;
-  border-radius: 30px;
-	padding: 0.5em 0 1em 0.5em;
-	margin: 0.75em 0 0.25em 0;
-	width: 98%;
-	display: grid;
-	grid-template-columns: 1fr 3fr 1fr 3fr;
+
+
+fieldset {
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 0.5em;
+    margin: 0.75em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.5em; 
 }
-input[type=submit]{
-	padding: 0.75em;
-	width: 35%;
-	height: auto;
-	margin-left: 67%;
-	color: #fff;
-	background-color: #222;
-	border: none;
-	font-family: serif;
+
+input[type=submit] {
+    padding: 0.75em;
+    width: auto; 
+    margin-left: auto; 
+    color: #fff;
+    background-color: #222;
+    border: none;
+    font-family: serif;
+    cursor: pointer;
 }
-textarea{
-  margin: 20px;
-	width: 100%;
-	height: 5em;
-	margin-bottom: 1em;
-  border: 10px solid black;
-  border-radius: 30px;
+
+
+textarea {
+    width: 100%; 
+    height: 5em;
+    border: 5px solid black;
+    border-radius: 15px;
+    box-sizing: border-box; 
 }
-input:focus, textarea:focus{
-	border-color: blue;
-	box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.3);
-	border-radius: 4px;
+
+
+input:focus, textarea:focus {
+    border-color: blue;
+    box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.3);
 }
-input:error, textarea:error{
-	border-color: #DE0B63;
+
+input:error, textarea:error {
+    border-color: #DE0B63;
 }
+
 /*--contact--*/
 /*--aboutme--*/
 .textbox {
